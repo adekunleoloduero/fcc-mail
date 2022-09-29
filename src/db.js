@@ -10,7 +10,7 @@ class Database {
     }
 
     _connect() {
-        mongoose.connect(`mongodb:${databaseServer}/${databaseName}`).
+        mongoose.connect(`mongodb://${databaseServer}/${databaseName}`).
         then(() => {
             console.log('Connected to database successfully.')
         }).
